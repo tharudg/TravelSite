@@ -15,13 +15,3 @@
   </div> 
 </div>
 
-
-
-<button nz-button [nzType]="'primary'" (click)="showModal()">
-  <span>Open</span>
-</button>
-<nz-modal [nzVisible]="isVisible" [nzTitle]="'Ela kiri'" [nzContent]="modalContent" (nzOnCancel)="handleCancel($event)" (nzOnOk)="handleOk($event)">
-  <ng-template #modalContent>
-    <p>What is this puthA?</p>
-  </ng-template>
-</nz-modal>

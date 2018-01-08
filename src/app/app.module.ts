@@ -5,7 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SuiModule } from 'ng2-semantic-ui';
 import { SimpleNotificationsModule } from 'angular2-notifications';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { AppComponent } from './app.component';
 import { AppRoutes } from "./app.routes";
 
@@ -37,11 +36,11 @@ import { MainContainerComponent } from './components/main-container/main-contain
   ],
   imports: [
     RouterModule.forRoot(AppRoutes),
-    SimpleNotificationsModule.forRoot(),
-    FormsModule,
-    SuiModule,
     BrowserModule,
-    BrowserAnimationsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    SimpleNotificationsModule.forRoot(),
+    SuiModule,
   ],
   exports: [ RouterModule ],
   providers: [
