@@ -5,7 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SuiModule } from 'ng2-semantic-ui';
 import { SimpleNotificationsModule } from 'angular2-notifications';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgZorroAntdModule, NZ_LOCALE, enUS } from 'ng-zorro-antd';
 
 import { AppComponent } from './app.component';
 import { AppRoutes } from "./app.routes";
@@ -38,18 +37,14 @@ import { MainContainerComponent } from './components/main-container/main-contain
   ],
   imports: [
     RouterModule.forRoot(AppRoutes),
-    NgZorroAntdModule.forRoot(),
     SimpleNotificationsModule.forRoot(),
     FormsModule,
     SuiModule,
-    NgZorroAntdModule,
     BrowserModule,
     BrowserAnimationsModule
   ],
   exports: [ RouterModule ],
   providers: [
-
-    { provide: NZ_LOCALE, useValue: enUS },
     /**
      * Calllers
      */
