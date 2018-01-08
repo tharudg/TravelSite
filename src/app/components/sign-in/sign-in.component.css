@@ -1,0 +1,12 @@
+.v-center {
+  position: relative;
+
+  top: 30%;
+  transform: translateY(-50%);
+}
+.h-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
