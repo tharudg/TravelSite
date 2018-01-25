@@ -1,0 +1,29 @@
+.item{
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif;  
+    transition: all 0.5s;
+    height: 6vh;
+}    
+a.item:hover{
+    background-color: rgb(51, 99, 4) !important;
+}
+.search-area .item :hover{
+    background-color: red !important;
+}
+.header{
+
+    -webkit-box-shadow: 0 3px 3px 3px rgb(160, 160, 160);
+    box-shadow: 0 3px 3px 3px rgb(160, 160, 160);
+}
+.menu{
+    padding-top: 1vh;
+}
+.header-size{
+    height: 8vh;
+    border-radius: 0;
+    background: rgb(1, 80, 19) !important; /* Old browsers */
+    background-image: radial-gradient(circle, #046010, #265619, #334c23, #38422c, #383936) !important;
+}
+.fa-color{ 
+   color: rgb(20, 114, 238) !important;
+}

@@ -21,6 +21,10 @@ import { AuthStore } from './store/auth.store';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { MainContainerComponent } from './components/main-container/main-container.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+
+
 
 
 
@@ -34,6 +38,9 @@ import { MainContainerComponent } from './components/main-container/main-contain
     SignInComponent,
     PageNotFoundComponent,
     MainContainerComponent,
+    HeaderComponent,
+    FooterComponent,
+
   ],
   imports: [
     RouterModule.forRoot(AppRoutes),
@@ -61,7 +68,7 @@ import { MainContainerComponent } from './components/main-container/main-contain
     DateHelper,
     NotificationHelper,
 
-  
+
   ],
   bootstrap: [AppComponent]
 })
