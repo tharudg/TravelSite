@@ -26,7 +26,6 @@
     "antd": "^3.1.0",
     "axios": "^0.17.1",
     "core-js": "^2.4.1",
-    "ng-zorro-antd": "^0.6.10",
     "ng2-semantic-ui": "^0.9.6",
     "ngx-bootstrap": "^2.0.0-beta.8",
     "rxjs": "^5.4.2",

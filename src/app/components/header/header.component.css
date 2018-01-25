@@ -24,6 +24,4 @@ a.item:hover{
     background: rgb(1, 80, 19) !important; /* Old browsers */
     background-image: radial-gradient(circle, #046010, #265619, #334c23, #38422c, #383936) !important;
 }
-.fa-color{ 
-   color: rgb(20, 114, 238) !important;
-}
+
