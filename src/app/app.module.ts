@@ -22,6 +22,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { MainContainerComponent } from './components/main-container/main-container.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 
 
@@ -39,6 +40,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MainContainerComponent,
     HeaderComponent,
     FooterComponent,
+    ContactUsComponent,
 
   ],
   imports: [
