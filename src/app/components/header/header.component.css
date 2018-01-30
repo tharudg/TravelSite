@@ -6,10 +6,9 @@
 }    
 a.item:hover{
     background-color: rgb(51, 99, 4) !important;
+    border-radius: 10%;
 }
-.search-area .item :hover{
-    background-color: red !important;
-}
+
 .header{
 
     -webkit-box-shadow: 0 3px 3px 3px rgb(160, 160, 160);
@@ -24,4 +23,34 @@ a.item:hover{
     background: rgb(1, 80, 19) !important; /* Old browsers */
     background-image: radial-gradient(circle, #046010, #265619, #334c23, #38422c, #383936) !important;
 }
-
+.dropdownfont{
+    color: black !important;
+}
+.dropdown{
+    border-radius: 0%;
+    background: transparent !important;
+    padding-top: 2%; 
+}
+.xsheader-size{
+    height:40px;
+    border-radius: 0;
+    background: rgb(1, 80, 19) !important; /* Old browsers */
+    background-image: radial-gradient(circle, #046010, #265619, #334c23, #38422c, #383936) !important;
+}
+.hide-search-box {
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    
+}
+.sm-search-box {
+    transform-origin: top;
+    transition: all 0.3s ease-in-out !important;
+    
+}
+.search-icon{
+    color: white;
+    cursor: pointer;
+    padding-left: 15%;
+    padding-right: 15%;
+}

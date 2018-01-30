@@ -24,6 +24,7 @@ import { MainContainerComponent } from './components/main-container/main-contain
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 import { CarouselModule } from 'angular4-carousel';
 
@@ -37,7 +38,8 @@ import { CarouselModule } from 'angular4-carousel';
     MainContainerComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ContactUsComponent
 
   ],
   imports: [

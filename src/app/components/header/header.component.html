@@ -1,21 +1,50 @@
 <div class="header hidden-xs-down">
+
         <div class="row ui menu header-size col-lg-12 cell">
                 <div class="container">
 
                         <a class="item" [routerLink]="['/app-home']">Home </a>
                         <a class="item"> Locations </a>
                         <a class="item"> Contact us </a>
+
+        <div class = "row ui menu header-size col-lg-12 col-xs-cell">
+                <div class="container">
+                        
+                        <a class="item">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                                <span style="margin-left: 0.5em;"> Home </span>
+                        </a>  
+                        <a class="item">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                                <span style="margin-left: 0.5em;"> Locations </span>
+                        </a> 
+                        <a class="item">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span style="margin-left: 0.5em;" routerLink="about-us"> About us </span>
+                        </a>
                         <div class="right item search-area">
                                 <sui-search placeholder="Find Destination..." [hasIcon]="true" [options]="options" [searchDelay]="0" (resultSelected)="alertSelected($event)">
                                 </sui-search>
 
+
                                 <div>
                                         <div class="ui dropdown button" style="background: transparent" suiDropdown autoClose="outsideClick">
+
+                            
+                                <div>   
+                                        <div class="ui dropdown button" style="padding-top: 2vh; background: transparent" suiDropdown autoClose="outsideClick">
+
                                                 <i class="fa fa-user-circle-o fa-2x" style="color: aliceblue" aria-hidden="true"></i>
 
                                                 <div class="menu" suiDropdownMenu>
-                                                        <div class="item">Login</div>
-                                                        <div class="item">Sign Up</div>
+                                                        <div routerLink="sign-in" class="item">
+                                                                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                                                Login
+                                                        </div>
+                                                        <div class="item">
+                                                                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                                                Sign Up
+                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
@@ -26,9 +55,52 @@
 
         </div>
 </div>
-<div class=" hidden-sm-up">
-        <div class="sidebar">
+<div   class="hidden-sm-up col-xs-12 xsheader-size" align="center">
 
-
+        <div (click)="isSearchBoxHide = true;" class="ui primary dropdown button col-xs-4"  suiDropdown autoClose="outsideClick">
+                <i class="fa fa-compass fa-2x" aria-hidden="true"></i>
+                <div class="menu" suiDropdownMenu>
+                        <div class="item dropdownfont">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                                Home
+                        </div>
+                        <div class="item dropdownfont">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Location
+                        </div>
+                        <div class="item dropdownfont">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                Contact us
+                        </div>
+                </div>
         </div>
 </div>
+        
+        <i (click)="seachBoxShowButton ()" class="fa fa-search fa-2x col-xs-4 search-icon"  aria-hidden="true"></i>
+
+        <div (click)="isSearchBoxHide = true;" class="ui dropdown button col-xs-4" suiDropdown autoClose="outsideClick">
+                        
+                <i class="fa fa-user-circle-o fa-2x" style="color: aliceblue" aria-hidden="true"></i>
+                <div class="menu " suiDropdownMenu >
+                                <div class="item dropdownfont">
+                                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                        Login
+                                </div>
+                                <div class="item dropdownfont">
+                                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                        Sign Up
+                                </div>
+                        </div>
+                </div>      
+                
+</div>
+<div
+        [class.hide-search-box] = "isSearchBoxHide"
+ class="hidden-sm-up sm-search-box col-xs-12 xsheader-size" align="center">
+        <sui-search [optionsLookup]="optionsSearch"
+                optionsField="title"
+                (resultSelected)="last = $event">
+        </sui-search>
+</div>
+
+
