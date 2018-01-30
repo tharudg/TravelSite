@@ -1,34 +1,29 @@
 <div class="header hidden-xs-down">
-        <div class = "row ui menu header-size col-lg-12 cell">
+        <div class="row ui menu header-size col-lg-12 cell">
                 <div class="container">
-                        
-                        <a class="item">Home </a>  
-                        <a class="item"> Locations </a> 
+
+                        <a class="item" [routerLink]="['/app-home']">Home </a>
+                        <a class="item"> Locations </a>
                         <a class="item"> Contact us </a>
                         <div class="right item search-area">
-                               <sui-search placeholder="Find Destination..."
-                                        [hasIcon]="true"
-                                        [options]="options"
-                                        [searchDelay]="0"
-                                        (resultSelected)="alertSelected($event)"
-                               >      
+                                <sui-search placeholder="Find Destination..." [hasIcon]="true" [options]="options" [searchDelay]="0" (resultSelected)="alertSelected($event)">
                                 </sui-search>
-                            
-                                <div>   
+
+                                <div>
                                         <div class="ui dropdown button" style="background: transparent" suiDropdown autoClose="outsideClick">
                                                 <i class="fa fa-user-circle-o fa-2x" style="color: aliceblue" aria-hidden="true"></i>
-                                        
+
                                                 <div class="menu" suiDropdownMenu>
                                                         <div class="item">Login</div>
                                                         <div class="item">Sign Up</div>
                                                 </div>
-                                        </div>                                
+                                        </div>
                                 </div>
-                                
+
                         </div>
                 </div>
-             
-              
+
+
         </div>
 </div>
 <div class=" hidden-sm-up">
@@ -37,4 +32,3 @@
 
         </div>
 </div>
-

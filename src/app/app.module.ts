@@ -16,29 +16,28 @@ import { NotificationHelper } from './helper/notification.helper';
 import { AuthCaller } from './caller/auth.caller';
 import { AuthStore } from './store/auth.store';
 
+// import { BreadcrumbsComponent } from './components/shared/breadcrumbs.component';
 
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { MainContainerComponent } from './components/main-container/main-container.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
 
-
-
-
-
-
-
+import { CarouselModule } from 'angular4-carousel';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    // BreadcrumbsComponent,
     SignInComponent,
     PageNotFoundComponent,
     MainContainerComponent,
     HeaderComponent,
     FooterComponent,
+    HomeComponent
 
   ],
   imports: [
@@ -48,6 +47,7 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserAnimationsModule,
     SimpleNotificationsModule.forRoot(),
     SuiModule,
+    CarouselModule
   ],
   exports: [ RouterModule ],
   providers: [
